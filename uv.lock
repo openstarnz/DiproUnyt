@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "dipro-unyt"
+version = "0.1.0"
+source = { editable = "." }
+dependencies = [
+    { name = "modshim" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "modshim", specifier = ">=0.5.1" }]
+
+[[package]]
+name = "modshim"
+version = "0.5.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/a1/96/c0f6111c8d61e9eb74a377dcfa0e2b3962dffd78d57eb32f84affc84097b/modshim-0.5.1.tar.gz", hash = "sha256:c6b5173be63b436163274fe19747edf4021970d96f38ab22f3cd6c24c4e6dca1", size = 60958, upload-time = "2026-03-13T11:02:42.234Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/18/c7bf46c2648155fcd8e7976e506a068f011b9cdccfcecbaa58b4809502cf/modshim-0.5.1-py3-none-any.whl", hash = "sha256:2d7ec9ad85dd81f1f5ac748f3546cb689b85ac91d171e8fc4497539d6ace217e", size = 19205, upload-time = "2026-03-13T11:02:41.238Z" },
+]
