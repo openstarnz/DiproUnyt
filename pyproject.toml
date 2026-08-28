@@ -1,10 +1,11 @@
 [project]
 name = "dipro_unyt"
 version = "0.1.0"
-description = "Add your description here"
+description = "An extension of unyt for dipro that adds support for IMAS IDS species types and other metadata"
 readme = "README.md"
 dependencies = [
     "modshim>=0.5.1",
+    "unyt>=3.1.0",
 ]
 
 [project.scripts]
