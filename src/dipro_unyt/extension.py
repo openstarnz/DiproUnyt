@@ -12,7 +12,7 @@ class unyt_array(unyt_array_original):
     #     super().__init__(*args, **kwargs)
 
     def __new__(cls, *args, imas_ids: str = "", description: str = "", species=None, species_idx=None, whatever_property_we_need=None, **kwargs) -> None:
-        instance = super().__new__(cls, *args, **kwargs)
+        instance = super().__new__(cls, *args, **kwargs) #TODO: add a clean check of kwargs so the error does not propagate into unyt and scares the users
         instance.imas_ids = imas_ids
         instance.description = description
         instance.species = species
